@@ -1,0 +1,45 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background: rgb(18, 18, 18);
+}
+
+.logo-image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 45%;
+    background-color: orange
+}
+
+.fa-brands {
+    padding: 10px;
+}
+
+.media-links {
+    display: flex;
+    color: whitesmoke;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.whatsappIconBulk,
+.facebookIconBulk {
+    position: relative;
+
+}
+
+.whatsappLink,
+.facebookLink {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+}

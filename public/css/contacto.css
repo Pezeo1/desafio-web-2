@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: rgb(18, 18, 18);
+    color: #ffff;
+    font-family: 'Lexend', sans-serif;
+    background-image: url("../../public/Images/Pizza01.png");
+    background-size: 100%;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.fields {
+    margin: auto;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.contact-wrapper {
+    background: rgb(18, 18, 18, 0.75);
+    width: 60vh;
+    margin: auto;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+    height: 50vh;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.contact-text {
+    line-height: 1.5;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+
+}
+
+input,
+textarea {
+    border-radius: 2.5px;
+    text-decoration: none;
+    border: none;
+}
+
+textarea {
+    width: 250px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}

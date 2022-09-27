@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(18, 18, 18);
+    color: #ffff;
+    font-family: 'Lexend', sans-serif;
+    background-image: url("../../public/Images/Pizza01.5.png");
+    background-size: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+
+}
+
+
+#pizza {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(18, 18, 18, 0.75);
+    width: 45vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 50px;
+
+
+}
+
+.delivery {
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+.whatsapp {
+    cursor: pointer
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    height: 38vh;
+}

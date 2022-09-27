@@ -1,0 +1,79 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: rgb(18, 18, 18);
+    color: #ffff;
+    font-family: 'Lexend', sans-serif;
+    background-image: url("../../public/Images/pizza02.jpg");
+    background-size: 160%;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.mitad1 {
+    width: 30vw;
+
+}
+
+.mitad2 {
+    width: 30vw;
+}
+
+.tamaño {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+
+}
+
+p {
+    padding-right: 35px;
+}
+
+.pizza {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    background: rgb(18, 18, 18, 0.75);
+    border-radius: 25px;
+    margin: 20px;
+
+}
+
+.tipo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.nombre {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.gusto {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.precios {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.precio {
+    padding: 10px;
+}
