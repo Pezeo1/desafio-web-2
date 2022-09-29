@@ -15,17 +15,26 @@
 
     main {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         margin: auto;
     }
 
     .mitad1 {
-        width: 30vw;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 80vw;
     }
 
     .mitad2 {
-        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 80vw;
     }
 
     .tamaño {
@@ -36,27 +45,28 @@
 
     }
 
-
-
     .pizza {
         display: flex;
-        flex-direction: column;
+        width: 100%;
+        height: 20vh;
+        flex-direction: row;
         justify-content: space-between;
         position: relative;
         padding: 10px;
         background: rgb(18, 18, 18, 0.75);
         border-radius: 25px;
-        margin: 20px;
         transition: transform ease 0.5s;
+        margin: 10px;
     }
 
     .pizza-mitad1 {
         display: flex;
-        width: 80%;
+        width: 70%;
     }
 
     .pizza-mitad2 {
         display: flex;
+        width: 30%;
         flex-direction: column;
         margin: 5px 5px 0px 0px;
     }
@@ -71,27 +81,149 @@
     .tipo {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 75%;
         padding: 10px;
     }
 
     .nombre {
-        padding: 10px;
+        position: absolute;
+        left: 30px;
+        top: 15px;
+        width: 60%;
+        overflow-wrap: break-word;
     }
 
     .gusto {
-        padding: 10px;
-        word-break: normal;
+        position: absolute;
+        left: 30px;
+        top: 50px;
+        width: 60%;
+        overflow-wrap: break-word;
     }
 
     .precios {
         display: flex;
         justify-content: space-around;
+        top: 10px;
     }
 
     .precio {
         padding: 10px;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        background: rgb(18, 18, 18);
+        color: #ffff;
+        font-family: 'Lexend', sans-serif;
+        background-image: url("../../public/Images/pizza02.jpg");
+        background-size: 160%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .mitad1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 45vw;
+    }
+
+    .mitad2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 45vw;
+    }
+
+    .tamaño {
+        display: flex;
+        justify-content: space-around;
+        top: 10px;
+
+
+    }
+
+
+
+    .pizza {
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px;
+        background: rgb(18, 18, 18, 0.75);
+        border-radius: 25px;
+        transition: transform ease 0.5s;
+        margin: 10px;
+    }
+
+    .pizza-mitad1 {
+        display: flex;
+        width: 70%;
+    }
+
+    .pizza-mitad2 {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        margin: 5px 5px 0px 0px;
+    }
+
+    .pizza:hover {
+        display: flex;
+        outline: 2px red solid;
+        transform: scale(1.05, 1.05);
+        font-weight: bold;
+    }
+
+    .tipo {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        padding: 10px;
+    }
+
+    .nombre {
+        position: absolute;
+        left: 30px;
+        top: 15px;
+        width: 60%;
+        overflow-wrap: break-word;
+    }
+
+    .gusto {
+        position: absolute;
+        left: 30px;
+        top: 50px;
+        width: 60%;
+        overflow-wrap: break-word;
+    }
+
+    .precios {
+        display: flex;
+        justify-content: space-around;
+        top: 10px;
+    }
+
+    .precio {
+        padding: 10px;
     }
 }
 
@@ -112,17 +244,25 @@
 
     main {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
         margin: auto;
     }
 
     .mitad1 {
-        width: 30vw;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 35vw;
     }
 
     .mitad2 {
-        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 35vw;
     }
 
     .tamaño {
@@ -137,23 +277,26 @@
 
     .pizza {
         display: flex;
+        width: 100%;
+        height: 18vh;
         flex-direction: row;
         justify-content: space-between;
         position: relative;
         padding: 10px;
         background: rgb(18, 18, 18, 0.75);
         border-radius: 25px;
-        margin: 20px;
         transition: transform ease 0.5s;
+        margin: 10px;
     }
 
     .pizza-mitad1 {
         display: flex;
-        width: 80%;
+        width: 70%;
     }
 
     .pizza-mitad2 {
         display: flex;
+        width: 30%;
         flex-direction: column;
         margin: 5px 5px 0px 0px;
     }
@@ -168,21 +311,30 @@
     .tipo {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 75%;
         padding: 10px;
     }
 
     .nombre {
-        padding: 10px;
+        position: absolute;
+        left: 30px;
+        top: 15px;
+        width: 60%;
+        overflow-wrap: break-word;
     }
 
     .gusto {
-        padding: 10px;
-        word-break: normal;
+        position: absolute;
+        left: 30px;
+        top: 50px;
+        width: 60%;
+        overflow-wrap: break-word;
     }
 
     .precios {
         display: flex;
+        justify-content: space-around;
+        top: 10px;
     }
 
     .precio {

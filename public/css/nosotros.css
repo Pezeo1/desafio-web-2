@@ -1,4 +1,4 @@
-@media only screen and (min-width: 361px) {
+@media only screen and (min-width: 360px) {
     * {
         padding: 0px;
         margin: 0px;
@@ -31,12 +31,12 @@
 
     .about {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
-        padding: 30px;
+        padding: 5px;
         background: rgb(18, 18, 18, 0.75);
         border-radius: 25px;
-        width: 40vw;
+        width: auto;
     }
 
     .Parrafo {
@@ -55,7 +55,7 @@
 
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     * {
         padding: 0px;
         margin: 0px;
@@ -83,17 +83,17 @@
         padding: 30px;
         background: rgb(18, 18, 18, 0.75);
         border-radius: 25px;
-        margin: 40px;
+
     }
 
     .about {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
         background: rgb(18, 18, 18, 0.75);
         border-radius: 25px;
-        width: 40vw;
+        width: 734px;
     }
 
     .Parrafo {
