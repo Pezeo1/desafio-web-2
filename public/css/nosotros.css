@@ -1,52 +1,111 @@
-* {
-    padding: 0px;
-    margin: 0px;
+@media only screen and (min-width: 361px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        background: rgb(18, 18, 18);
+        color: #ffff;
+        font-family: 'Lexend', sans-serif;
+        background-image: url("../../public/Images/Pizza03.jpg");
+        background-size: 100%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .Titulo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 30px;
+        background: rgb(18, 18, 18, 0.75);
+        border-radius: 25px;
+        margin: 40px;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        background: rgb(18, 18, 18, 0.75);
+        border-radius: 25px;
+        width: 40vw;
+    }
+
+    .Parrafo {
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: justify;
+        word-wrap: break-word;
+        width: 50%;
+    }
+
+    img {
+
+        border-radius: 25px;
+    }
 }
 
-body {
-    background: rgb(18, 18, 18);
-    color: #ffff;
-    font-family: 'Lexend', sans-serif;
-    background-image: url("../../public/Images/Pizza03.jpg");
-    background-size: 100%;
-    margin-bottom: 20px;
-}
 
-.container {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
 
-.Titulo {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding: 30px;
-    background: rgb(18, 18, 18, 0.75);
-    border-radius: 25px;
-    margin: 40px;
-}
+@media only screen and (min-width: 1200px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
 
-.about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 30px;
-    background: rgb(18, 18, 18, 0.75);
-    border-radius: 25px;
-    width: 40vw;
-}
+    body {
+        background: rgb(18, 18, 18);
+        color: #ffff;
+        font-family: 'Lexend', sans-serif;
+        background-image: url("../../public/Images/Pizza03.jpg");
+        background-size: 100%;
+        margin-bottom: 20px;
+    }
 
-.Parrafo {
-    line-height: 1.5;
-    font-size: 18px;
-    text-align: justify;
-    word-wrap: break-word;
-    width: 50%;
-}
+    main {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
 
-img {
+    .Titulo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 30px;
+        background: rgb(18, 18, 18, 0.75);
+        border-radius: 25px;
+        margin: 40px;
+    }
 
-    border-radius: 25px;
+    .about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        background: rgb(18, 18, 18, 0.75);
+        border-radius: 25px;
+        width: 40vw;
+    }
+
+    .Parrafo {
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: justify;
+        word-wrap: break-word;
+        width: 50%;
+    }
+
+    img {
+
+        border-radius: 25px;
+    }
 }

@@ -1,79 +1,191 @@
-* {
-    padding: 0px;
-    margin: 0px;
+@media only screen and (min-width: 361px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        background: rgb(18, 18, 18);
+        color: #ffff;
+        font-family: 'Lexend', sans-serif;
+        background-image: url("../../public/Images/pizza02.jpg");
+        background-size: 160%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .mitad1 {
+        width: 30vw;
+
+    }
+
+    .mitad2 {
+        width: 30vw;
+    }
+
+    .tamaño {
+        display: flex;
+        justify-content: space-around;
+        top: 10px;
+
+
+    }
+
+
+
+    .pizza {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px;
+        background: rgb(18, 18, 18, 0.75);
+        border-radius: 25px;
+        margin: 20px;
+        transition: transform ease 0.5s;
+    }
+
+    .pizza-mitad1 {
+        display: flex;
+        width: 80%;
+    }
+
+    .pizza-mitad2 {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 5px 0px 0px;
+    }
+
+    .pizza:hover {
+        display: flex;
+        outline: 2px red solid;
+        transform: scale(1.05, 1.05);
+        font-weight: bold;
+    }
+
+    .tipo {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .nombre {
+        padding: 10px;
+    }
+
+    .gusto {
+        padding: 10px;
+        word-break: normal;
+    }
+
+    .precios {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .precio {
+        padding: 10px;
+
+    }
 }
 
-body {
-    background: rgb(18, 18, 18);
-    color: #ffff;
-    font-family: 'Lexend', sans-serif;
-    background-image: url("../../public/Images/pizza02.jpg");
-    background-size: 160%;
-    margin-bottom: 20px;
-}
+@media only screen and (min-width: 1200px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
 
-.container {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
+    body {
+        background: rgb(18, 18, 18);
+        color: #ffff;
+        font-family: 'Lexend', sans-serif;
+        background-image: url("../../public/Images/pizza02.jpg");
+        background-size: 160%;
+        margin-bottom: 20px;
+    }
 
-.mitad1 {
-    width: 30vw;
+    main {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
 
-}
+    .mitad1 {
+        width: 30vw;
 
-.mitad2 {
-    width: 30vw;
-}
+    }
 
-.tamaño {
-    display: flex;
-    position: absolute;
-    top: 10px;
-    right: 0px;
+    .mitad2 {
+        width: 30vw;
+    }
 
-}
+    .tamaño {
+        display: flex;
+        justify-content: space-around;
+        top: 10px;
 
-p {
-    padding-right: 35px;
-}
 
-.pizza {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 10px;
-    background: rgb(18, 18, 18, 0.75);
-    border-radius: 25px;
-    margin: 20px;
+    }
 
-}
 
-.tipo {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 10px;
-}
 
-.nombre {
-    padding: 10px;
-    word-wrap: break-word;
-}
+    .pizza {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px;
+        background: rgb(18, 18, 18, 0.75);
+        border-radius: 25px;
+        margin: 20px;
+        transition: transform ease 0.5s;
+    }
 
-.gusto {
-    padding: 10px;
-    word-wrap: break-word;
-}
+    .pizza-mitad1 {
+        display: flex;
+        width: 80%;
+    }
 
-.precios {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-}
+    .pizza-mitad2 {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 5px 0px 0px;
+    }
 
-.precio {
-    padding: 10px;
+    .pizza:hover {
+        display: flex;
+        outline: 2px red solid;
+        transform: scale(1.05, 1.05);
+        font-weight: bold;
+    }
+
+    .tipo {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .nombre {
+        padding: 10px;
+    }
+
+    .gusto {
+        padding: 10px;
+        word-break: normal;
+    }
+
+    .precios {
+        display: flex;
+    }
+
+    .precio {
+        padding: 10px;
+    }
 }
