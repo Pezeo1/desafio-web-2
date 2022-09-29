@@ -92,7 +92,7 @@
         background: rgb(18, 18, 18);
         color: #ffff;
         font-family: 'Lexend', sans-serif;
-        background-image: url("../../public/Images/Pizza04.jpg");
+        background-image: url("../../public/Images/pizza04.jpg");
         object-fit: cover;
         margin-bottom: 20px;
     }
