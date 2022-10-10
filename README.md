@@ -1,4 +1,4 @@
-# desafio-web-2 : Proyecto incluyendo CSS,Html,Git.
+# desafio-web-2 : Proyecto incluyendo CSS,Grid,SASS,Html,Git.
 
 <h1 align="center">Hi 👋, I'm Pablo Grandoli</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
