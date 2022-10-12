@@ -1,4 +1,4 @@
-@media only screen and (min-width: 361px) {
+@media only screen and (min-width: 360px) {
     * {
         padding: 0px;
         margin: 0px;
@@ -273,7 +273,11 @@
 
     }
 
-
+    .pizzas {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        gap: 30px 30px;
+    }
 
     .pizza {
         display: flex;
