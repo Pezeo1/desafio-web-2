@@ -1,6 +1,7 @@
 @media only screen and (min-width: 360px) {
 
     /* header */
+
     .logo-container {
         display: flex;
         align-items: center;
@@ -71,27 +72,16 @@
         text-decoration: none;
     }
 
-
     /* fin header */
-
-
-
-
 
     /* buttons */
 
     .nav-container {
-        display: flex;
-        justify-content: center;
+        position: relative;
+        display: inline-block;
+        margin: auto;
+        align-items: center;
         border-top: 5px solid red;
-    }
-
-    .nav {
-        height: 45px;
-        display: none;
-        justify-content: center;
-        background: rgb(18, 18, 18);
-        width: 100%;
     }
 
     .nav-menu {
@@ -106,9 +96,47 @@
         position: relative;
         border-radius: 5px;
         margin: 20px;
+        cursor: pointer;
     }
 
+    .dropdown {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: rgb(18, 18, 18);
+        min-width: 90vw;
+        border-top: 2px solid red;
+        border-bottom: 2px solid red;
+    }
 
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 10px;
+        background-color: #f9f9f9;
+        min-width: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        background: rgb(18, 18, 18);
+        cursor: pointer;
+        z-index: 1;
+        padding: 10px;
+        outline: 2px solid red;
+        border-radius: 0.5rem;
+        height: auto;
+        width: auto;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+
+    }
 
     .nav-link {
         padding: 5px 20px;
@@ -123,7 +151,6 @@
         font-size: 20px;
         background-color: white;
         color: black;
-        font-weight: bold;
         transition: ease 0.2s;
     }
 
@@ -171,11 +198,8 @@
 
     /* fin buttons*/
 
-
-
-
-
     /* footer */
+
     .contact-info {
         position: relative;
         display: flex;
@@ -194,204 +218,231 @@
     }
 
     /* fin footer*/
-}
 
-@media only screen and (min-width: 768px) {
 
-    /* header */
-    .logo-container {
-        display: flex;
-        align-items: center;
-        padding: 25px;
-        background: rgb(18, 18, 18);
-    }
+    @media only screen and (min-width: 768px) {
 
-    .logo-image {
-        width: 200px;
-        height: 200px;
-        margin: auto;
-        background-size: cover;
-        background-position: top center;
-        border-radius: 45%;
-        background-color: orange;
-        animation: rotate 1.5s ease infinite;
-
-    }
-
-    @keyframes rotate {
-        0% {
-            transform: rotate(0deg);
+        /* header */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            background: rgb(18, 18, 18);
         }
 
-        25% {
-            transform: rotate(4deg);
+        .logo-image {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background-size: cover;
+            background-position: top center;
+            border-radius: 45%;
+            background-color: orange;
+            animation: rotate 1.5s ease infinite;
+
         }
 
-        50% {
-            transform: rotate(0deg);
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(4deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+
+            75% {
+                transform: rotate(-4deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
         }
 
-        75% {
-            transform: rotate(-4deg);
+        .fa-brands {
+            padding: 10px;
         }
 
-        100% {
-            transform: rotate(0deg);
+        .media-links {
+            display: flex;
+            color: whitesmoke;
+            font-size: 30px;
+            position: absolute;
+            top: 15px;
+            right: 20px;
         }
+
+        .whatsappIconBulk,
+        .facebookIconBulk {
+            position: relative;
+
+        }
+
+        .whatsappLink,
+        .facebookLink {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+        }
+
+
+
+        /* fin header */
+
+        /* buttons */
+
+        .nav-container {
+            position: relative;
+            display: inline-block;
+            margin: auto;
+            align-items: center;
+            border-top: 5px solid red;
+        }
+
+
+        .nav-menu {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: black;
+            outline: rgb(255, 0, 0) 2px solid;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            border-radius: 5px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            background: rgb(18, 18, 18);
+            min-width: 90vw;
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+        }
+
+        .dropdown-content {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 0px;
+            background-color: #f9f9f9;
+            min-width: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            background: rgb(18, 18, 18);
+            cursor: pointer;
+            z-index: 1;
+            outline: 0px solid red;
+            border-radius: 0rem;
+            height: 25px;
+            width: auto;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: flex;
+
+        }
+
+
+        .nav-link {
+            padding: 5px 20px;
+            margin: 5px 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .nav-link:hover {
+            outline: 3px solid white;
+            border-radius: 1rem;
+            font-size: 20px;
+            background-color: white;
+            color: black;
+
+            transition: ease 0.2s;
+        }
+
+        a:link {
+
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+
+        .button {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 7px 14px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            color: white;
+            background-color: red;
+            margin-top: 20px;
+        }
+
+        .button-whatsapp {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 7px 14px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            color: white;
+            background-color: red;
+            margin-top: 20px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 10px auto;
+            transition: transform ease 0.5s;
+        }
+
+        .button-whatsapp:hover {
+            display: flex;
+            justify-content: center;
+            transform: scale(1.25, 1.25);
+        }
+
+        /* fin buttons*/
+
+        /* footer */
+        .contact-info {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: black;
+            bottom: -25px;
+            border-top: 5px solid red;
+        }
+
+
+        li {
+            padding: 5px;
+        }
+
+        /* fin footer*/
     }
 
-    .fa-brands {
-        padding: 10px;
-    }
-
-    .media-links {
-        display: flex;
-        color: whitesmoke;
-        font-size: 30px;
-        position: absolute;
-        top: 15px;
-        right: 20px;
-    }
-
-    .whatsappIconBulk,
-    .facebookIconBulk {
-        position: relative;
-
-    }
-
-    .whatsappLink,
-    .facebookLink {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-        text-decoration: none;
-    }
-
-
-
-    /* fin header */
-
-
-
-
-
-    /* buttons */
-
-    .nav-container {
-        display: flex;
-        justify-content: center;
-        border-top: 4px solid red;
-        border-bottom: 4px solid red;
-    }
-
-    .nav {
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        background: rgb(18, 18, 18);
-        width: 100%;
-    }
-
-    .nav-menu {
-        display: none;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        background-color: black;
-        outline: white 2px solid;
-        width: 40px;
-        height: 40px;
-        position: relative;
-        border-radius: 5px;
-        margin: 20px;
-    }
-
-
-
-    .nav-link {
-        padding: 5px 20px;
-        margin: 5px 10px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-
-    .nav-link:hover {
-        outline: 3px solid white;
-        border-radius: 1rem;
-        font-size: 20px;
-        background-color: white;
-        color: black;
-        font-weight: bold;
-        transition: ease 0.2s;
-    }
-
-    a:link {
-
-        color: white;
-    }
-
-    a:visited {
-        color: white;
-    }
-
-
-    .button {
-        font-size: 1em;
-        font-weight: bold;
-        padding: 7px 14px;
-        border-radius: 15px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        color: white;
-        background-color: red;
-        margin-top: 20px;
-    }
-
-    .button-whatsapp {
-        font-size: 1em;
-        font-weight: bold;
-        padding: 7px 14px;
-        border-radius: 15px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        color: white;
-        background-color: red;
-        margin-top: 20px;
-        width: 200px;
-        border: 2px solid black;
-        margin: 10px auto;
-        transition: transform ease 0.5s;
-    }
-
-    .button-whatsapp:hover {
-        display: flex;
-        justify-content: center;
-        transform: scale(1.25, 1.25);
-    }
-
-    /* fin buttons*/
-
-
-
-
-
-    /* footer */
-    .contact-info {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-        padding: 20px;
-        background-color: black;
-        bottom: -25px;
-        border-top: 5px solid red;
-    }
-
-
-    li {
-        padding: 5px;
-    }
-
-    /* fin footer*/
 }
